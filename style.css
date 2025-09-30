@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #c0ecf7;
+  color: #333;
+  line-height: 1.6;
+}
+ 
+/* Cabeçalho */
+header {
+  background-color: #75b493;
+  color: #074225;
+  padding: 30px 15px;
+  text-align: center;
+}
+ 
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+ 
+header p {
+  font-size: 1.1em;
+}
+ 
+/* Navegação */
+nav {
+  background-color: #80c9a3;
+}
+ 
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+ 
+nav ul li {
+  margin: 5px;
+}
+ 
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+ 
+nav ul li a:hover {
+  background-color: #00994d;
+  border-radius: 5px;
+}
+ 
+/* Conteúdo principal */
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+ 
+/* Seções */
+section {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
+ 
+section h2 {
+  color: #006633;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+ 
+section p, section ul {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+ 
+/* Imagens com tamanho padrão */
+section img {
+  width: 100%;
+  max-width: 800px;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+  margin: 18px auto;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+ 
+ 
+/* Rodapé */
+footer {
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  margin-top: 50px;
+}
+ 
+/* Responsivo para celular */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+ 
+  nav ul li a {
+    width: 100%;
+  }
+ 
+  header h1 {
+    font-size: 1.6em;
+  }
+}
